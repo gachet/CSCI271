@@ -2,7 +2,7 @@
 
 Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/wildart/CSCI271/master?filepath=notebooks)
 
-- [Introduction to Computers & C++ Programming](docs/Introduction_to_Computers_and_C++_Programming.md)
+- [Introduction to Computers & C++ Programming](docs/Introduction-to-Computers-and-Programming.md)
 - [Input/Output and Operations](docs/Input-Output-and-Operations.md)
 - [Introduction to Classes](docs/Introduction-to-Classes.md)
 - [Control Statements](docs/Control-Statements.md)
@@ -10,26 +10,26 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 - [Functions](docs/Functions.md)
 - [Arrays & Vectors](docs/Arrays.md)
 
-## Solutions
+## Assignments
 
-- [Assignment 1](progs/hw1.cpp)
-- [Assignment 2](progs/hw2.cpp)
-- [Assignment 3](progs/hw3.cpp)
-- [Assignment 4](progs/hw4.cpp)
-- [Assignment 5](progs/hw5.cpp)
+- TBA
 
-## Lab instructions
+## Labs
+
+- TBA
+
+### Lab Instructions
 
 These [lab instructions](docs/First-lab-instructions.md) show how to compile your first program using GCC/Cygwin C++ compiler in Windows OS.
 
-## Compilers & IDEs
+### Compilers & IDEs
 
 - [CodeBlocks](http://www.codeblocks.org/)
 - [Dev-C++](https://www.bloodshed.net/devcpp.html)
 - [CodeLite](https://codelite.org/)
 - Cygwin: Follow first three installation steps of [this instruction](https://warwick.ac.uk/fac/sci/moac/people/students/peter_cock/cygwin/)
 
-## Command Line Commands
+### Command Line Commands
 
 [Linux/MacOS/Cygwin](https://ss64.com/bash/)
 

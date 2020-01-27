@@ -1,5 +1,14 @@
-
 # Introduction to Computers & C++ Programming
+
+## Computer Architecture Influence
+<div style="width:40%; float: right">
+    <img src="../img/vonNeumann.png"/>
+</div>
+
+- Well-known computer architecture: Von Neumann
+- Data and programs stored in memory
+- Memory is separate from CPU
+- Instructions and data are piped from memory to CPU
 
 ## Hardware and Software
 
@@ -7,18 +16,28 @@
 
 Regardless of differences in physical appearance, computers can be envisioned as divided into various logical units or sections:
 
-- **Input unit:** This “receiving” section obtains information (data and computer programs) from input devices and places it at the disposal of the other units for processing.
-
-- **Output unit:** This “shipping” section takes information the computer has processed and places it on various output devices to make it available for use outside the computer. 
-
 - **Memory unit:** This rapid-access section retains information that has been entered through the input unit, also retains processed information until it can be placed on output devices by the output unit.
 
 - **Arithmetic and logic unit (ALU):** This unit performs calculations, and also contains the decision mechanisms. The ALU is implemented as part of the next logical unit, the CPU.
 
 - **Central processing unit (CPU):** The CPU tells the input unit when information should be read into the memory unit, tells the ALU when information from the memory unit should be used in calculations and tells the output unit when to send information from the memory unit to certain output devices.
 
-## Byte measurements
+## Hardware and Software (cont.)
 
+- **Input unit:** This “receiving” section obtains information (data and computer programs) from input devices and places it at the disposal of the other units for processing.
+
+- **Output unit:** This “shipping” section takes information the computer has processed and places it on various output devices to make it available for use outside the computer. 
+
+## Byte measurements
+<style type="text/css">
+  .text_cell.rendered td .rendered_html td {
+    max-width: none;
+    white-space: normal;
+    line-height: normal;
+    padding: 0.3em 0.5em;
+    font-size: 15px;
+  }
+</style>
 |Unit            |Bytes          | Exactly | Which is approximately |
 |----------------|---------------|---------|---------------|
 |1 kilobyte (KB) |1024 bytes     | $2^{10}$  | $10^3$ (1024) bytes exactly |
@@ -53,29 +72,14 @@ LOAD B, 8282
 SUB B
 MOV C, A
 ```
+
+## Programming Languages (cont.)
+
 - **High-level languages** use instructions that look almost like everyday English and contain commonly used mathematical notations, processor independent & portable.
   - Compiling a high-level language program into machine language can take a considerable amount of computer time.
   - Interpreter programs were developed to execute high-level language programs directly (without the need for compilation), although more slowly than compiled programs.
 
-
 ### Example of Prgramming Language
-- Python, 1990, Guido van Rossum (Imperative object-oriented & functional)
-
-```python
-import sys
-sys.stdout.write("Hello world!\n")
-```
-- Java, 1995, James Gosling (Imperative object-oriented)
-
-```java
-public class HelloWorld
-{
-  public static void main(String[] args)
-  {
-    System.out.println("Hello world!");
-  }
-}
-```
 
 - C, 1972, Dennis Ritchie (Imperative procedural)
 
@@ -99,6 +103,26 @@ int main () {
 }
 ```
 
+### Example of Prgramming Language
+
+- Python, 1990, Guido van Rossum (Imperative object-oriented & functional)
+
+```python
+import sys
+sys.stdout.write("Hello world!\n")
+```
+- Java, 1995, James Gosling (Imperative object-oriented)
+
+```java
+public class HelloWorld
+{
+  public static void main(String[] args)
+  {
+    System.out.println("Hello world!");
+  }
+}
+```
+
 ### C
 
 C systems generally consist of several parts: 
@@ -107,14 +131,26 @@ C systems generally consist of several parts:
 - the language
 - the C Standard Library.
 
+
+![flow](../img/flow.png)
+
+### C (cont.)
+
 C programs typically go through six phases to be executed: 
 
-- edit: using editor program or IDE (integrated development environmen)
+- edit: using editor program or IDE (integrated development environment)
   - C program file names should end with the .c extension.
 - preprocess
   - the C preprocessor obeys special commands called preprocessor directives, which indicate that certain manipulations are to be performed on the program before compilation.
 - compile
   - the C compiler translates the C program into machine-language code.
+
+![flow2](../img/flow2.png)
+
+### C (cont.)
+
+C programs typically go through six phases to be executed: 
+
 - link
   - C programs typically contain references to functions defined elsewhere (e.g. the standard libraries).
   - A **linker** links the object code with the code for the missing functions to produce an executable image.
@@ -123,10 +159,6 @@ C programs typically go through six phases to be executed:
   - The loader takes the executable image from disk and transfers it to memory.
 - execute
   - The computer, under the control of its CPU, executes the program one instruction at a time.
-
-![flow](../img/flow.png)
-
-![flow2](../img/flow2.png)
 
 ### C++
 
