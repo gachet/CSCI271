@@ -190,7 +190,13 @@ C programs typically go through six phases to be executed:
 ```c++
 #include <iostream> // allows program to output data to the screen
 
-std::cout << "Welcome to C++!\n"; // display message
+int main() // function main begins program execution
+{
+   std::cout << "Welcome to C++!\n"; // display message
+
+   return 0; // indicate that program ended successfully
+
+} // end function main
 ```
 
     Welcome to C++!
