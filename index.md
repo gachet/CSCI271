@@ -12,7 +12,7 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 
 ## Assignments
 
-- TBA
+- [HW1](assign/hw01.md)
 
 ## Labs
 
