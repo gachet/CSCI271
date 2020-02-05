@@ -16,7 +16,7 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 
 ## Labs
 
-- TBA
+- [Lab1](assign/lab01.md)
 
 ### Lab Instructions
 
