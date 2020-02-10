@@ -19,6 +19,9 @@ This lab contains two questions.
 **Q1.** Predict the outputs of the following program.(Before running it). Then run the code and check if your answers are correct.
 
 ```c++
+#include <iostream>
+#include <cmath>
+using namespace std;
 int main() {
     int x = 6, y = 0, z = 3;
     double a = 5.0, b= 4.0;
