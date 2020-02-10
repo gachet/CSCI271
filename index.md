@@ -17,6 +17,7 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 ## Labs
 
 - [Lab1](assign/lab01.md)
+- [Lab2](assign/lab02.md)
 
 ### Lab Instructions
 
