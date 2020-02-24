@@ -1,4 +1,3 @@
-
 # Input/Output and Operators
 
 ## Input/Output
@@ -7,8 +6,7 @@
 ```c++
 #include <iostream> // allows program to output data to the screen
 
-// function main begins program execution
-int main()
+int main() // function main begins program execution
 {
     std::cout << "Welcome to C++!\n"; // display message
 
@@ -51,10 +49,17 @@ Edit and run to above program: https://coliru.stacked-crooked.com/a/0ddabf5f1e1e
   - White-space characters are normally ignored by the compiler.
 - **main** is a part of every C++ program.
 - The parentheses after main indicate that main is a program building block called a function.
-- C++ programs typically consist of one or more functions and classes.
-- Exactly one function in every program must be named main.
+```c
+    int main()
+```
 - C++ programs begin executing at function main, even if main is not the first function defined in the program.
-- The keyword int to the left of main indicates that main “returns” an integer (whole number) value.
+
+### Code (cont.)
+
+- C++ programs typically consist of one or more functions and classes.
+- Exactly one function in every program must be named **main**.
+- C++ programs begin executing at function main, even if main is not the first function defined in the program.
+- The keyword **int** to the left of main indicates that main “returns” an integer (whole number) value.
 - A keyword is a word in code that is reserved by C++ for a specific use.
   - For now, simply include the keyword int to the left of main in each of your programs.
 ```c
@@ -73,13 +78,22 @@ Blocks:
   - White-space characters in strings are not ignored by the compiler.
 - Most C++ statements end with a **semicolon (;)**, also known as the **statement terminator**.
   - Preprocessing directives (like #include) do not end with a semicolon.
-  
-Tips:
 
-- Indent the body of each function one level within the braces that delimit the function’s body. This makes a program’s functional structure stand out, making the program easier to read.
+### Tips:
+
+- Indent the body of each function one level within the braces that delimit the function's body. This makes a program's functional structure stand out, making the program easier to read.
 - Set a convention for the size of indent you prefer, then apply it uniformly. The tab key may be used to create indents, but tab stops may vary. We prefer three spaces per level of indent.
 
-### Streams
+### Namespase
+
+- Namespaces allow us to group named entities that otherwise would have global scope into narrower scopes, giving them namespace scope. This allows organizing the elements of programs into different logical scopes referred to by names.
+- E.g. **std** namespace designate collection of types and functions related to the C++ standard library.
+
+```c++
+using namespace std;
+```
+
+## Streams
 
 - Typically, output and input in C++ are accomplished with **streams** of data. 
 - When a *cout* statement executes, it sends a stream of characters to the **standard output stream object - std::cout** - which is normally "connected" to the screen.
@@ -89,18 +103,13 @@ Tips:
 - In the context of an output statement, the << operator is referred to as the **stream insertion operator**.
   - The value to the operator’s right, the right operand, is inserted in the output stream.
 
-Namespase
-
-- Namespaces allow us to group named entities that otherwise would have global scope into narrower scopes, giving them namespace scope. This allows organizing the elements of programs into different logical scopes referred to by names.
-
-
 ### Escape Characters
 
-- The characters \n are not printed on the screen.
-- The backslash (\) is called an escape character.
-  - It indicates that a “special” character is to be output.
+- The characters **\n** are not printed on the screen.
+- The backslash (**\**) is called an escape character.
+  - It indicates that a "special" character is to be output.
 - When a backslash is encountered in a string of characters, the next character is combined with the backslash to form an escape sequence.
-- The escape sequence \n means newline.
+- The escape sequence **\n** means newline.
   - Causes the cursor to move to the beginning of the next line on the screen.
   
 [Escape Characters on Wikipedia](https://en.wikipedia.org/wiki/Escape_character)
@@ -170,16 +179,19 @@ int main() {
 
 - Declarations introduce identifiers into programs.
 - The identifiers *number1*, *number2* and *result* are the names of variables.
-- A variable is a location in the computer’s memory where a value can be stored for use by a program.
-- Variables *number1*, *number2* and *result* are data of type **int**, meaning that these variables will hold **integers** (whole numbers such as 7, –11, 0 and 31914).
+- A variable is a location in the computer's memory where a value can be stored for use by a program.
+- Variables *number1*, *number2* and *result* are data of type **int**, meaning that these variables will hold **integers** (whole numbers such as 7, -11, 0 and 31914).
 - All variables **must** be declared with a name and a data type before they can be used in a program.
 - If more than one name is declared in a declaration (as shown here), the names are separated by commas (,); this is referred to as a comma-separated list.
+
+## Variables (cont.)
+
 - A variable name is any valid **identifier** that is not a keyword.
 - An **identifier** is a series of characters consisting of letters, digits and underscores ( _ ) that does not begin with a digit.
 - C++ is **case sensitive**  - uppercase and lowercase letters are different, so a1 and A1 are different identifiers.
 - Declarations of variables can be placed almost anywhere in a program, but they must appear before their corresponding variables are used in the program.
 
-Tips
+### Tips
 - C++ allows identifiers of any length
 - Choosing meaningful identifiers helps make a program **self-documenting**
 - Avoid using abbreviations in identifiers. This improves program readability.
@@ -191,7 +203,7 @@ Tips
   - Most calculations are performed in assignment statements.
 - The = operator and the + operator are called **binary** operators because each has two operands.
 
-Tips
+**Tips**
 
 - Place spaces on either side of a binary operator. This makes the operator stand out and makes the program more readable.
 
@@ -200,6 +212,8 @@ Tips
 Arithmetic expressions in C++ must be entered into the computer in straight-line form.
 
 ![arithmetic](../img/arithmetic.png)
+
+## Precedence
 
 C++ applies the operators in arithmetic expressions in a precise sequence determined by the following rules of operator precedence, which are generally the same as those followed in algebra.
 
@@ -210,9 +224,8 @@ C++ applies the operators in arithmetic expressions in a precise sequence determ
 Write a program that calculates the surface area and volume of cubes with face lengths of 0 to 4 cm. Use tabs to print the following neatly formatted table of values:
 
 ```
-Face length   Surface area    Volume
+Side length   Surface area    Volume
 of cube (cm)  of cube (cm^2)  of cube (cm^3)
-0             0               0
 1             1               1
 2             4               8
 3             9               27 
@@ -232,6 +245,27 @@ of cube (cm)  of cube (cm^2)  of cube (cm^3)
 
 - **Abstract or user defined data type**: These data types are defined by user itself. Like, defining a class in C++ or a structure.
 
+
+```c++
+#include<iostream>
+using namespace std;
+
+cout << "Size of char : " << sizeof(char) << " byte" << endl;
+cout << "Size of int : " << sizeof(int) << " bytes" << endl;
+cout << "Size of float : " << sizeof(float) << " bytes" <<endl;
+cout << "Size of double : " << sizeof(double) << " bytes" << endl;
+cout << "Size of wchar_t : " << sizeof(wchar_t) << " bytes" <<endl;
+```
+
+    Size of char : 1 byte
+    Size of int : 4 bytes
+    Size of float : 4 bytes
+    Size of double : 8 bytes
+    Size of wchar_t : 4 bytes
+
+
+## Data Modifiers
+
 - **Datatype Modifiers** are used with the built-in data types to modify the length of data that a particular data type can hold.
 
   - signed
@@ -245,26 +279,18 @@ of cube (cm)  of cube (cm^2)  of cube (cm^3)
 #include<iostream>
 using namespace std;
 
-cout << "Size of char : " << sizeof(char) << " byte" << endl;
 cout << "Size of int : " << sizeof(int) << " bytes" << endl;
 cout << "Size of short int : " << sizeof(short int) << " bytes" << endl;
 cout << "Size of long int : " << sizeof(long int) << " bytes" << endl;
 cout << "Size of signed long int : " << sizeof(signed long int) << " bytes" << endl;
 cout << "Size of unsigned long int : " << sizeof(unsigned long int) << " bytes" << endl;
-cout << "Size of float : " << sizeof(float) << " bytes" <<endl;
-cout << "Size of double : " << sizeof(double) << " bytes" << endl;
-cout << "Size of wchar_t : " << sizeof(wchar_t) << " bytes" <<endl;
 ```
 
-    Size of char : 1 byte
     Size of int : 4 bytes
     Size of short int : 2 bytes
     Size of long int : 8 bytes
     Size of signed long int : 8 bytes
     Size of unsigned long int : 8 bytes
-    Size of float : 4 bytes
-    Size of double : 8 bytes
-    Size of wchar_t : 4 bytes
 
 
 ## Advanced Stream Usage
@@ -383,6 +409,8 @@ else
 }
 ```
 
+## Conditional Statement (cont.)
+
 Conditions in *if* statements can be formed by using the equality operators and relational operators.
 - The relational operators all have the same level of precedence and associate left to right.
 - The equality operators both have the same level of precedence, which is lower than that of the relational operators, and associate left to right.
@@ -395,9 +423,7 @@ if (logical-condition)
 }
 ```
 
-Tips
-
-- Indent the statement(s) in the body of an if statement to enhance readability.
+*Tips: Indent the statement(s) in the body of an if statement to enhance readability.*
 
 ## Equality and Relational Operators
 
@@ -451,28 +477,9 @@ int main() {
 
 ### Exersise
 
-Write a program that asks for the number of calories and fat grams in a food. The program should display the percentage of calories that come from fat. If the calories from fat are less than 30% of the total calories of the food, it should also display a message indicating that the food is low in fat.
+Write a program that asks for the number of calories and fat grams in a food.
 
-One gram of fat has 9 calories, so
-Calories_from_fat = fat_grams * 9
-
-Your program should display instructions to the user, and should check that inputs make sense, exiting with an informative error message if not.
-
-## Homework 1
-
-Write a program that inputs the starting balance, the amount deposited, the number of checks, and the total value of all of the checks, and computes the monthly service fee for a checking account according to the following schedule:
-
-- \$15 if the balance at the start of the month is less than 400
-- \$15 if the balance at the end of the month is less than 400
-- \$25 if the average check value is more than 500
-- \$50 if the balance at the end of the month is negative
-
-In addition, there is a per-check fee which is computed as follows:
-- checks 1 - 19 in any given month cost &#36;0.10 each
-- checks 20 - 39 in any given month cost &#36;0.08 each
-- checks 40 - 59 in any given month cost &#36;0.06 each
-- additional checks cost &#36;0.04 each
-
-If the starting balance is negative, the program should exit with the statement that the account has been closed.
-
-The program should be designed for clarity and testing -- using carefully chosen variable names and displaying fees as they are incurred (along with the reason for the fee) will go most of the way to accomplishing this.
+- The program should display the percentage of calories that come from fat.
+- If the calories from fat are less than 30% of the total calories of the food, it should also display a message indicating that the food is low in fat.
+- One gram of fat has 9 calories, so Calories_from_fat = fat_grams * 9
+- Your program should display instructions to the user, and should check that inputs make sense, exiting with an informative error message if not.
