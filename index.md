@@ -4,16 +4,17 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 
 - [Introduction to Computers & C++ Programming](docs/Introduction-to-Computers-and-Programming.md)
 - [Input/Output and Operations](docs/Input-Output-and-Operations.md)
-- [Introduction to Classes](docs/Introduction-to-Classes.md)
 - [Control Statements](docs/Control-Statements.md)
 - [Operators](docs/Operators.md)
 - [Functions](docs/Functions.md)
+- [Introduction to Classes](docs/Introduction-to-Classes.md)
 - [Arrays & Vectors](docs/Arrays.md)
 
 ## Assignments
 
 - [HW1](assign/hw01.md)
 - [HW2](assign/hw02.md)
+- [HW3](assign/hw03.md)
 
 ## Labs
 
