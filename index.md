@@ -20,6 +20,8 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 
 - [Lab1](assign/lab01.md)
 - [Lab2](assign/lab02.md)
+  - [Solution](assign/lab02-ans.md)
+- [Lab3](assign/lab03.md)
 
 ### Lab Instructions
 
