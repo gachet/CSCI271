@@ -14,6 +14,7 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 
 - [HW1](assign/hw01.md)
 - [HW2](assign/hw02.md)
+  - [Solution](assign/hw02-ans.md)
 - [HW3](assign/hw03.md)
 
 ## Labs
