@@ -2,9 +2,9 @@
 
 Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/wildart/CSCI271/master?filepath=notebooks)
 
-- [Introduction to Computers & C++ Programming](docs/Introduction-to-Computers-and-Programming.md)
-- [Input/Output and Operations](docs/Input-Output-and-Operations.md)
-- [Control Statements](docs/Control-Statements.md)
+- [Introduction to Computers & C++ Programming](https://nbviewer.jupyter.org/github/wildart/CSCI271/blob/master/notebooks/Introduction-to-Computers-and-Programming.ipynb)
+- [Input/Output and Operations](https://nbviewer.jupyter.org/github/wildart/CSCI271/blob/master/notebooks/Input-Output-and-Operations.ipynb)
+- [Control Statements](https://nbviewer.jupyter.org/github/wildart/CSCI271/blob/master/notebooks/Control-Statements.ipynb)
 - [Operators](docs/Operators.md)
 - [Functions](docs/Functions.md)
 - [Introduction to Classes](docs/Introduction-to-Classes.md)
