@@ -5,7 +5,7 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 - [Introduction to Computers & C++ Programming](https://nbviewer.jupyter.org/github/wildart/CSCI271/blob/master/notebooks/Introduction-to-Computers-and-Programming.ipynb)
 - [Input/Output and Operations](https://nbviewer.jupyter.org/github/wildart/CSCI271/blob/master/notebooks/Input-Output-and-Operations.ipynb)
 - [Control Statements](https://nbviewer.jupyter.org/github/wildart/CSCI271/blob/master/notebooks/Control-Statements.ipynb)
-- [Operators](docs/Operators.md)
+- [Operators](https://nbviewer.jupyter.org/github/wildart/CSCI271/blob/master/notebooks/Operators.ipynb)
 - [Functions](docs/Functions.md)
 - [Introduction to Classes](docs/Introduction-to-Classes.md)
 - [Arrays & Vectors](docs/Arrays.md)
@@ -16,6 +16,7 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 - [HW2](assign/hw02.md)
   - [Solution](assign/hw02-ans.md)
 - [HW3](assign/hw03.md)
+- [HW4](assign/hw04.md)
 
 ## Labs
 
@@ -23,6 +24,8 @@ Run notebooks: [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/
 - [Lab2](assign/lab02.md)
   - [Solution](assign/lab02-ans.md)
 - [Lab3](assign/lab03.md)
+  - [Solution](assign/lab03-ans.md)
+- [Lab4](assign/lab04.md)
 
 ### Lab Instructions
 
