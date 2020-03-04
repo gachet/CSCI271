@@ -54,7 +54,7 @@ int main()
         return 0;
     }
 
-    double fee, checkfee;
+    double checkfee;
     if (num_of_checks >= 1 && num_of_checks <= 19)
         checkfee = num_of_checks*0.1;
     else if (num_of_checks >= 20 && num_of_checks <= 39)
@@ -69,10 +69,11 @@ int main()
     end_balance = start_balance + deposited - val_of_checks;
     cout << "The the end of the month balance before fees " << end_balance << endl;
 
-    if (start_balance < 400) fee = 15;
-    if (end_balance < 400) fee = 15;
-    if (val_of_checks/num_of_checks > 500) fee = 25;
-    if (end_balance < 0) fee = 50;
+    double fee = 0;
+    if (start_balance < 400) fee += 15;
+    if (end_balance < 400) fee += 15;
+    if (val_of_checks/num_of_checks > 500) fee += 25;
+    if (end_balance < 0) fee += 50;
     cout << "Account fees are " << fee << endl;
 
     end_balance = end_balance - fee - checkfee;
